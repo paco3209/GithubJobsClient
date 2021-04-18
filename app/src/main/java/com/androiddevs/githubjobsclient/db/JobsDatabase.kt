@@ -12,7 +12,7 @@ import com.androiddevs.githubjobsclient.models.JobsItem
     entities = [JobsItem::class],
     version = 1
 )
-@TypeConverters(Converters::class)
+
 abstract class JobsDatabase : RoomDatabase() {
 
     abstract fun getArticleDao(): ArticleDao
