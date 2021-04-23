@@ -1,6 +1,6 @@
 # GithubJobsClient
 
-App realizada con Patron de diseño MVVM. Retrofit, Coroutines, Livedata, RoomDatabase.
+App realizada con Arquitectura MVVM. Retrofit, Coroutines, Livedata, RoomDatabase.
 
 Utiliza la Api de GithubJobs.
 
