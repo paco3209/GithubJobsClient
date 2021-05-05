@@ -57,7 +57,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
 
 
 
-            tvPublishedAt.text = article.created_at
+            //tvPublishedAt.text = article.created_at
 
 
 

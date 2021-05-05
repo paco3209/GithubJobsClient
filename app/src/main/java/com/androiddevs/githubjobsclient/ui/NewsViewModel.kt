@@ -22,9 +22,9 @@ class NewsViewModel(
     val searchNews: MutableLiveData<Resource<JobsResponse>> = MutableLiveData()
     var searchNewsPage = 1
 
-    init {
-        getBreakingNews()
-    }
+        init {
+            getBreakingNews()
+        }
 
     fun getBreakingNews() = viewModelScope.launch {
         breakingNews.postValue(Resource.Loading())

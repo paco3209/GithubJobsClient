@@ -6,6 +6,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.androiddevs.githubjobsclient.R
 import com.androiddevs.githubjobsclient.adapters.NewsAdapter
@@ -69,6 +70,8 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
         newsAdapter = NewsAdapter()
         rvBreakingNews.apply {
             adapter = newsAdapter
+            val decoration = DividerItemDecoration(context, LinearLayoutManager.VERTICAL)
+            addItemDecoration(decoration)
             layoutManager = LinearLayoutManager(activity)
         }
     }
